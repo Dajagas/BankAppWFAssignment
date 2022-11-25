@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Settings">
+
+
+    <TextView
+        android:id="@+id/settings_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="25sp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="Settings"
+        />
+    <Switch
+        android:id="@+id/notifcations_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/settings_text"
+        app:layout_constraintBottom_toTopOf="@+id/mask_switch"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="25sp"
+        android:paddingTop="10sp"
+        android:textSize="25sp"
+        android:text="Notifications" />
+    <Switch
+        android:id="@+id/mask_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/notifcations_switch"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="25sp"
+        android:paddingTop="10sp"
+        android:textSize="25sp"
+        android:text="Mask Account Number" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

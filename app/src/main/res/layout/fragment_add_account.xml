@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddAccount">
+
+    <TextView
+        android:id="@+id/text_view_add_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add an account"
+        android:textSize="28sp"
+        android:padding="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:hint="Bank name"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:paddingBottom="10sp"
+        android:textSize="20sp"
+        android:ems="11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_add_acc" />
+
+    <EditText
+        android:id="@+id/edit_text_acc_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:hint="Account Number"
+        android:inputType="number"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:paddingBottom="10sp"
+        android:textSize="20sp"
+        android:ems="11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_bank_name" />
+
+    <EditText
+        android:id="@+id/edit_text_acc_no_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:hint="Account Number confirm"
+        android:inputType="number"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:paddingBottom="10sp"
+        android:textSize="20sp"
+        android:ems="11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_acc_no" />
+
+    <EditText
+        android:id="@+id/edit_text_acc_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:hint="Account Type"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:paddingBottom="10sp"
+        android:textSize="20sp"
+        android:ems="11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_acc_no_confirm" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_acc_type"
+        app:layout_constraintBottom_toTopOf="@id/btn_write_data"/>
+
+    <Button
+        android:id="@+id/btn_write_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Add Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/btn_read_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:text="Read"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_write_data" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
